@@ -60,6 +60,8 @@ async def promote_usr(message: Message):
             can_restrict_members=True,
             can_invite_users=True,
             can_pin_messages=True,
+            can_promote_members=True,
+            can_manage_voice_chats=True,
         )
         if custom_rank:
             await asyncio.sleep(2)
